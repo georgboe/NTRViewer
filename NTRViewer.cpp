@@ -538,7 +538,7 @@ void initScreenInfo(int isTop, int w, int h, float scale) {
 	}
 	scr->needDraw = true;
 	if (scr->rawWidth != scr->srcRect.w) {
-		scr->swsContext = sws_getContext(scr->rawWidth, scr->rawHeight, XXX_PIX_FMT_RGB24, scr->srcRect.w, scr->srcRect.h, XXX_PIX_FMT_RGB24, 
+		scr->swsContext = sws_getContext(scr->rawWidth, scr->rawHeight, AV_PIX_FMT_RGB24, scr->srcRect.w, scr->srcRect.h, AV_PIX_FMT_RGB24, 
 			swsFlag, NULL, NULL, NULL);
 	}
 
