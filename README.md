@@ -24,9 +24,13 @@ Linux:
 
 apt-get install libsdl1.2-dev libjpeg-turbo8-dev libswscale-dev
 
+dnf install SDL-devel turbojpeg-devel ffmpeg-devel
+
 (or other equivalent methods to get these libraries installed)
 
-make CONF=Release
+cmake CMakeLists.txt
+
+make
 
 
 Windows:
